@@ -13,12 +13,21 @@ namespace LastTest.Entities
         public DbSet<KhachHang> KhachHang { get; set; }
         public DbSet<SanPham> SanPham { get; set; }
         public DbSet<DonHang_SanPham>DonHang_SanPham { get; set; }
+        public DbSet<KhachHang_DiaChiNhanHang> khachHang_DiaChiNhanHang { get; set; }
+        public DbSet<KhachHang_MoiQuanHe> khachHang_MoiQuanHe { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<DonHang_SanPham>()
                 .HasKey(dhsp => new { dhsp.IDDonHang, dhsp.IDSanPham });
+
+
+            //modelBuilder.Entity<KhachHang>()
+            //   .Property(kh=>kh.IDKhachHang)
+            //   .HasDefaultValue(modelBuilder.Entity<DonHang_SanPham>());
         }
+
+        
     }
 }

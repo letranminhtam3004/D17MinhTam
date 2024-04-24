@@ -46,7 +46,7 @@ namespace LastTest.Controllers
 
 
         [HttpPost("DoanhThuTheoNam111")]
-        public ActionResult<IEnumerable<BaoCaoTongDoanhThu>> GetBaoCaoTongDoanhThu111(string tungay, string denngay, string listidcuahang = null) //xem lai 
+        public ActionResult<IEnumerable<BaoCaoTongDoanhThu>> GetBaoCaoTongDoanhThu111(string tungay, string denngay, string listidcuahang ) //xem lai 
         {
             try
             {
