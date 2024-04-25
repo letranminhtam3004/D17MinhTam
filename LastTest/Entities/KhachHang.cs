@@ -7,7 +7,7 @@ namespace LastTest.Entities
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public decimal IDKhachHang { get; set; }
+        public decimal IDKhachHang { get; set; } //dsad
         public decimal? IDLoaiThe { get; set; }
         public string? MaThe { get; set; }
         public string? DanhXung { get; set; }
